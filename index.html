@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>中国考古博物馆</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="css/map.css" />
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <!-- 导航栏 -->
+    <div class="nav">
+      <span><a href="#">中国考古博物馆</a></span>
+      <ul id="content">
+        <li class="active"><a href="#Home">首页</a></li>
+        <li><a href="#Protection">文物保护</a></li>
+        <li><a href="#Distribution">非遗分布</a></li>
+        <li><a href="#Story">文物故事</a></li>
+      </ul>
+    </div>
+    <div class="box" id="box">
+      <div class="cont selected">
+        <!-- swiper轮播图 -->
+        <div class="swiper-container gallery-top">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/绿松石龙形器.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/嵌绿松石兽面纹铜牌饰.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/陶寺陶扁壶.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/玉玦.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/铜钺.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/“妇好”铜圆鼎.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/陶人面像.jpg" alt="图片异常" />
+            </div>
+          </div>
+        </div>
+        <!-- swiper缩略图 -->
+        <div class="swiper-container gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/绿松石龙形器.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/嵌绿松石兽面纹铜牌饰.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/陶寺陶扁壶.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/玉玦.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/铜钺.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/“妇好”铜圆鼎.jpg" alt="图片异常" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/陶人面像.jpg" alt="图片异常" />
+            </div>
+          </div>
+        </div>
+        <!-- 了解 -->
+        <div class="content-header">
+          <div class="title wow bounceInUp">
+            <span>古韵今风</span>
+            <span>文明之光</span>
+          </div>
+          <div class="splitLine"></div>
+          <div class="econtent wow flipInX">
+            建筑外形似尊的中国历史研究院，坐落在北京中轴线的北延长线上。院内的中国考古博物馆，是我国第一家以考古命名的国家级专业博物馆。<br />
+            在中国考古博物馆前，拾级而上，推开铸有《千里江山图》纹样的大门，一条“历史大道”在眼前展开，它以时间轴的形式展示了我国历史发展的重要节点和重大事件，铭刻着中华大地上百万年的人类史、一万余年的文化史和五千余年的文明史。大道两侧，两辆出土于河南安阳殷墟遗址的殷商时期马车整体展出，让参观者如同置身于考古出土现场一般
+          </div>
+          <div class="num">
+            <div class="num-left wow slideInRight">
+              <div class="number">7000</div>
+              <div class="splitLine"></div>
+              <div class="description">常设展厅7000多平方米</div>
+            </div>
+            <div class="num-right wow slideInLeft">
+              <div class="number">6000</div>
+              <div class="splitLine"></div>
+              <div class="description">
+                展品6000余件，在这里公众既能读解文物所携带的信息，又能了解考古在历史研究中的作用。
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 文物保护 -->
+        <div class="about">
+          <div class="about-left">
+            <div class="title wow bounceInUp">文物保护</div>
+            <div class="tcontent wow flipInX">
+              指的是对具有历史价值、文化价值、科学价值的历史遗留物采取的一系列防止其受到损害的措施，这个过程叫做文物保护。
+            </div>
+            <a href="#">
+              <div class="button wow lightSpeedIn">保护文物</div>
+            </a>
+          </div>
+          <div class="about-right">
+            <img src="images/文物保护0.jpg" alt="" class="wow flipInY" />
+          </div>
+        </div>
+        <!-- 镇馆之宝 -->
+        <div class="content-body">
+          <div class="contbody-top">
+            <div class="contbody-title wow bounceInUp">
+              那些承载历史变迁的镇馆之宝
+            </div>
+            <div class="contbody-smalltext wow flipInX">
+              走在中国考古博物馆的中国历史大道，可以感觉到历史的厚重，它从距今八百多万年腊玛古猿算起，一步一步往前走。
+            </div>
+            <div class="contbody-splitLine"></div>
+            <div class="contbody-content wow lightSpeedIn">
+              <div class="contentbox">
+                <img src="images/玉冠饰.jpg" alt="" />
+                <div class="text">玉冠饰</div>
+              </div>
+              <div class="contentbox">
+                <img src="images/嵌绿松石兽面纹铜牌饰.jpg" alt="" />
+                <div class="text">嵌绿松石兽面纹铜牌饰</div>
+              </div>
+              <div class="contentbox">
+                <img src="images/象牙杯.webp" alt="" />
+                <div class="text">象牙杯</div>
+              </div>
+            </div>
+          </div>
+          <div class="contbody-bottom">
+            <div class="contbody-title wow bounceInUp">文物的故事</div>
+            <div class="contbody-smalltext wow flipInX">
+              文物的背后，是历史诉说的故事
+            </div>
+            <div class="contbody-splitLine"></div>
+            <div class="contbody-display">
+              <div class="contbodyleft">
+                <div class="homeShow">
+                  <a href="_detail/龙形器.html" target="_blank"
+                    ><img
+                      src="images/绿松石龙形器.jpg"
+                      alt=""
+                      class="wow flipInY"
+                  /></a>
+                </div>
+                <div class="desn">
+                  <div class="desn-title wow flipInX">夏绿松石龙形器</div>
+                  <div class="desn-content wow flipInX">
+                    绿松石龙形器是中华民族龙图腾最直接、最正统的根源
+                  </div>
+                </div>
+              </div>
+              <div class="contbodyright">
+                <ul>
+                  <li>
+                    <a href="_detail/牌饰.html" target="_blank">
+                      <div class="title wow flipInX">嵌绿松石兽面纹铜牌饰</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="_detail/象牙杯.html" target="_blank">
+                      <div class="title wow flipInX">嵌绿松石象牙杯</div>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="_detail/铜爵.html" target="_blank">
+                      <div class="title wow flipInX">铜爵</div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cont">
+        <!-- 横幅 -->
+        <div class="banner">
+          <img src="images/横幅5.jpg" alt="" />
+        </div>
+        <!-- 内容 -->
+        <div class="proct">
+          <div class="proct-title wow bounceInUp">文物保护</div>
+          <div class="proct-smalltext wow flipInX">
+            文物是人类社会活动中遗留下来的具有历史、艺术、科学价值的遗物和遗迹。
+          </div>
+          <div class="proct-splitLine"></div>
+          <ul class="wow lightSpeedIn">
+            <li>
+              <img src="images/保护a.jpg" alt="" />
+              <div class="text">
+                第一，保护历史文化遗产：文物是人类历史文化的见证和遗存，通过保护文物，可以保护历史文化遗产，使之得以传承和延续
+              </div>
+            </li>
+            <li>
+              <img src="images/保护b.jpg" alt="" />
+              <div class="text">
+                第二，维护文化多样性：文物不仅仅代表着一个国家或地区的历史文化，还反映了不同文化之间的交流和融合。保护文物可以维护文化多样性，促进文化交流和理解。
+              </div>
+            </li>
+            <li>
+              <img src="images/保护d.jpg" alt="" />
+              <div class="text">
+                第三，提升国家文化软实力：文物是一个国家文化的重要组成部分，保护文物可以提升一个国家的文化软实力，增强其国际影响力和竞争力。
+              </div>
+            </li>
+            <li>
+              <img src="images/保护c.jpg" alt="" />
+              <div class="text">
+                第四，促进旅游业发展：文物是旅游业的重要资源，保护文物可以促进旅游业的发展，为经济增长提供支持。
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="cont">
+        <div class="banner">
+          <img src="images/横幅4.jpg" alt="" />
+        </div>
+        <div class="distr">
+          <div class="distr-title wow bounceInUp">非遗分布</div>
+          <div class="distr-smalltext wow flipInX">保护非遗就是在保护当代文化不要被遗忘而消逝</div>
+          <div class="distr-splitLine"></div>
+          <a href="map.html"><img src="images/分布.png" alt="" /></a>
+        </div>
+        <div class="content-body">
+          <div class="contbody-top">
+            <div class="contbody-title wow bounceInUp">
+              那些承载历史变迁的镇馆之宝
+            </div>
+            <div class="contbody-smalltext wow flipInX">
+              走在中国考古博物馆的中国历史大道，可以感觉到历史的厚重，它从距今八百多万年腊玛古猿算起，一步一步往前走。
+            </div>
+            <div class="contbody-splitLine"></div>
+            <div class="contbody-content wow lightSpeedIn">
+              <div class="contentbox">
+                <img src="images/玉冠饰.jpg" alt="" />
+                <div class="text">玉冠饰</div>
+              </div>
+              <div class="contentbox">
+                <img src="images/嵌绿松石兽面纹铜牌饰.jpg" alt="" />
+                <div class="text">嵌绿松石兽面纹铜牌饰</div>
+              </div>
+              <div class="contentbox">
+                <img src="images/象牙杯.webp" alt="" />
+                <div class="text">象牙杯</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cont">
+        <div class="banner">
+          <img src="images/横幅2.jpg" alt="" />
+        </div>
+        <div class="sto">
+          <div class="sto-title">岁月低语</div>
+          <div class="sto-smalltext">文物背后的历史故事</div>
+          <div class="sto-splitLine"></div>
+          <ul>
+            <li>
+              <a href="_detail/龙形器.html" target="_blank">
+                <img src="images/绿松石龙形器.jpg" alt="" />
+                <div class="text">
+                  <h5>夏绿松石龙形器</h5>
+                  <div>绿松石龙形器是中华民族龙图腾最直接、最正统的根源。</div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="_detail/牌饰.html" target="_blank">
+                <img src="images/嵌绿松石兽面纹铜牌饰.jpg" alt="" />
+                <div class="text">
+                  <h5>嵌绿松石兽面纹铜牌饰</h5>
+                  <div>
+                    掌握青铜技术的二里头贵族，实现了从氏族聚落向王权社会的过渡。
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="_detail/象牙杯.html" target="_blank">
+                <img src="images/象牙杯.webp" alt="" />
+                <div class="text">
+                  <h5>嵌绿松石象牙杯</h5>
+                  <div>
+                    商人服象，为虐于东夷，周公遂以师逐之，至于江南，乃为三象，以嘉其德。
+                  </div>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="_detail/铜爵.html" target="_blank">
+                <img src="images/铜爵.jpg" alt="" />
+                <div class="text">
+                  <h5>铜爵</h5>
+                  <div>
+                    铜爵是中国青铜器中最具代表性的酒礼器，可以说是中国酒文化的代表
+                  </div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 预约方式 -->
+      <div class="footer">
+        <div class="footerleft">
+          <div class="redor"><span>DeNeRATe</span>DESIGN</div>
+          <div class="info">
+            <div class="lxwm">博物馆信息</div>
+            <div class="top">
+              <div class="topleft">
+                地址：北京市朝阳区国家体育场北路1号院1号楼（南门）
+              </div>
+            </div>
+            <div class="middle">
+              <div class="middleleft">开馆时间：上午9：00</div>
+              <div class="middleright">
+                停止入馆：常设展16：00，临展16：30
+                观众退场：常设展16：30，临展17：00
+                闭馆时间：常设展16：30，临展17：00
+              </div>
+            </div>
+            <div class="bottom">
+              周一闭馆，周二团体日，周三至周日面向公众开放。如遇国家法定节假日或其他特殊情况，另行通知。
+            </div>
+          </div>
+        </div>
+        <div class="footerright">
+          <div><b>我有建议</b></div>
+          <form action="">
+            <div class="top">
+              <div>
+                <label for="name">姓名：</label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div>
+                <label for="email">邮件</label>
+                <input type="email" name="email" id="email" />
+              </div>
+            </div>
+            <div>
+              <label for="phone">电话：</label>
+              <input type="tel" name="phone" id="phone" />
+            </div>
+            <div class="textarea">
+              <label for="textarea">建议</label>
+              <textarea
+                name="textarea"
+                id="textarea"
+                cols="30"
+                rows="4"
+                placeholder="建议需审核后才会显示"
+              ></textarea>
+            </div>
+            <input type="submit" value="提交信息" class="ok" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/wow.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+    <script>
+      wow = new WOW({
+        boxClass: "wow", // 默认属性名
+        animateClass: "animated", // 默认触发的动画类(包含在animate css中)
+        offset: 0, // 为所有添加wow的元素设置 data-wow-delay属性 的默认值
+        mobile: true, // 是否在移动设备中开启动画
+        live: true, // 持续监测页面中是否插入新的wow元素
+      });
+      new WOW().init();
+    </script>
+  </body>
+</html>

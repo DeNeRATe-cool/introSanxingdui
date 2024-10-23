@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <title>世界遗产（中国境内）分布图</title>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #head {
+      position: absolute;
+      top: 0;
+      height: 10%;
+      text-align: center;
+      width: 100%;
+    }
+
+    #map {
+      position: absolute;
+      top: 13%;
+      bottom: 3%;
+      left: 15%;
+      width: 70%;
+    }
+
+    #menu {
+      position: absolute;
+      top: 8%;
+      left: 15%;
+      background: #fff;
+      padding: 10px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div id="head">
+      <h1>世界遗产（中国境内）分布图</h1>
+      <p>地图中红色圆点为文化遗产；黄色圆点为自然与文化双遗产。</p>
+    </div>
+    <div id="map">
+    </div>
+    <div id="menu">
+      <input id="ckiskf0r7115c19s067ownf3o" type="radio" name="rtoggle" value="streets" checked="checked" />
+      <label for="ckiskf0r7115c19s067ownf3o">标准</label>
+      <input id="ckishyeru0yrq1ap9gslw7uec" type="radio" name="rtoggle" value="satellite" />
+      <label for="ckishyeru0yrq1ap9gslw7uec">影像</label>
+    </div>
+  </div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1Ijoic2dpdSIsImEiOiJja2lzOG44MDMwMTBlMnhxaGdsNHhua2l3In0.Pid7RhlWFcurmM3sm3-Jxg';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/sgiu/ckiskf0r7115c19s067ownf3o',
+    });
+
+    map.addControl(new mapboxgl.NavigationControl());   // 添加地图缩放控件
+    map.addControl(new mapboxgl.FullscreenControl());   // 添加全屏控件
+    map.addControl(new mapboxgl.GeolocateControl({      // 定位控件
+      positionOptions: {
+        enableHighAccuracy: true
+      },
+      trackUserLocation: true
+    }));
+    var scale = new mapboxgl.ScaleControl({             // 添加比例尺控件
+      maxWidth: 80,
+      unit: 'imperial'
+    });
+    map.addControl(scale);
+    scale.setUnit('metric');                            // 设置度量标准
+
+    var layerList = document.getElementById('menu');
+    var inputs = layerList.getElementsByTagName('input');
+
+    function switchLayer(layer) {
+      var layerId = layer.target.id;
+      map.setStyle('mapbox://styles/sgiu/' + layerId);
+    }
+
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].onclick = switchLayer;
+    }
+  </script>
+</body>
+
+</html>

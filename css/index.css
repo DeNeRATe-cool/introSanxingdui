@@ -1,0 +1,573 @@
+*{
+	font-size: 2vmin;
+	margin:0;
+	padding:0;
+}
+a{text-decoration: none;}
+li{list-style-type: none;}
+/*导航栏*/
+.nav{
+	margin-top:10px;
+	display: flex;
+	justify-content: space-around;
+	z-index: -1;
+	opacity: 1;
+}
+/* vmin 视窗较小的宽高度的百分比*/
+.nav span a{
+	font-size:5vmin;
+	font-weight: bold;
+	color: orangered;
+}
+.nav ul{
+	display: flex;
+	align-self: center;
+}
+.nav ul li{
+	font-size:1.7vmin;
+	margin-left:3vmin;
+	padding:1vmin;
+	box-sizing: border-box;
+}
+.nav ul li a{
+	color:black;
+	font-size:1.7vmin;
+}
+.nav .active{
+	background: orangered;
+	border-radius:2vmin;
+	color: white;	
+}
+.box .cont{
+	display: none;
+}
+.box .selected{
+	display: block;
+	position: relative;
+	margin-top:2vmin;
+}
+/*轮播图*/
+.gallery-top{
+	background: white;
+	margin-top:3vmin;
+	height:80vmin;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.gallery-top .swiper-slide{
+	position: relative;
+}
+.gallery-top .swiper-slide img{
+	width:100vw;
+	height:100vmin;
+	position:absolute;
+	top:-5vmin;
+}
+/*缩略图*/
+.gallery-thumbs{
+	height:11vmin;
+	width:46vmin;
+	margin-top: -12vmin;
+}
+.gallery-thumbs .swiper-slide img{
+	width:8vmin;
+	height:8vmin;
+	border:0.2vmin solid white;
+}
+.content-header{
+	color: white;
+	background-color: black;
+	opacity: 0.9;
+	padding: 8vmin;
+	text-align: center;
+	box-sizing: border-box;
+}
+.content-header:after{
+	content:'';
+	display: block;
+	width:100%;
+	height:100vh;
+	position:fixed;
+	top:14vmin;
+	background: url(../images/考古博物馆.jpg)no-repeat center;
+	background-size:cover; 
+	left:0;
+	opacity: 0.1;
+}
+.content-header .title span{
+	font-size:3.3vmin;
+	font-weight:bold;
+}
+.content-header .splitLine{
+	width:6vmin;
+	border:0.5px solid white;
+	margin:3vmin auto;
+}
+.content-header .econtent{
+	font-size: 1.4vmin;
+	width:60%;
+	margin:0 auto;
+	line-height:2;
+	font-weight: 300;
+	display: -webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content-header .num{
+	width:100%;
+	display: flex;
+	justify-content:space-around;
+	margin:4vmin auto;
+}
+.content-header .number{
+	font-size:7vmin;
+}
+.content-header .num .description{
+	font-size: 1.8vmin;
+	width:25vmin;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.about{
+	display: flex;
+	box-sizing: border-box;
+	padding:15vmin;
+	position: relative;
+	width:100%;
+	justify-content: center;
+	z-index: 1;
+	background:white;
+}
+.about:after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: url(../images/文物保护0.jpg)no-repeat center;
+	background-size: cover;
+	z-index: -1;
+	filter: blur(1vmin);
+	opacity: 0.2;
+}
+.about .about-left{
+	width:30vmin;
+	height:40vmin;
+	margin-right:25vmin;
+}
+.about .about-left .title{
+	font-size: 3.2vmin;
+	color:#333333;
+	margin: 5vmin auto;
+}
+.about .about-left .tcontent{
+	width:40vmin;
+	font-size: 1.4vmin;
+	font-weight: 400;
+	color:#333333;
+	line-height:2;
+	display: -webkit-box;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.about .about-left .button{
+	width:18vmin;
+	padding:1.2vmin;
+	text-align: center;
+	color: white;
+	box-sizing: border-box;
+	font-size:1vmin;
+	background: orangered;
+	margin-top:6vmin;
+}
+.about .about-right img{
+	width:50vmin;
+	height:40vmin;
+	overflow: hidden;
+}
+.content-body{
+	text-align:center;
+	background: white;
+	position: relative;
+	box-sizing: border-box;
+	padding:8vmin 18vw;
+}
+.content-body .contbody-title{
+	font-size: 3vmin;
+	color: orangered;
+}
+.content-body .contbody-smalltext{
+	margin:1vmin 0;
+	font-size:1.5vmin;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content-body .contbody-splitLine{
+	width:100%;
+	background: gray;
+	border:0.5px solid gray;
+}
+.content-body .contbody-content{
+	margin-top:10vmin;
+	display: flex;
+	justify-content: space-around;
+}
+.contbody-content .contentbox{
+	width: 35vmin;
+	height:30vmin;
+	/*overflow: hidden;*/
+	margin-right:5vmin;
+}
+.contbody-content .contentbox img{
+	width:35vmin;
+	height:30vmin;
+	/*overflow: hidden;*/
+	position: relative;
+	top:-4vmin;
+	background-position: center;
+}
+.contbody-content .contentbox .text{
+	width: 35vmin;
+	font-size:1.5vmin;
+	margin-top:-3vmin;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.contbody-bottom{
+	margin-top:10vw;
+}
+.contbody-display{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 10vmin;
+}
+.contbody-display .contbodyleft{
+	width:24vw;
+}
+.contbody-display .contbodyleft .homeShow img{
+	width:24vw;
+	height:18vmin;
+}
+.contbody-display .contbodyleft .desn{
+	font-size:1.5vmin;
+	display: -webkit-box;
+	color: gray;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.contbodyleft .desn .desn-title{
+	margin:1vmin;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.contbodyleft .desn .desn-content{
+	font-size: 1.3vmin;
+	line-height:1.7;
+}
+.contbody-display .contbodyright{
+	width:35vw;
+}
+.contbody-display .contbodyright ul li a{
+	width: 35vw;
+	height:3;
+	display: flex;
+	justify-content: space-around;
+	border-bottom:0.5px solid rgb(132,125,125,0.3);
+	line-height: 3;
+}
+.contbody-display .contbodyright ul li a .title{
+	text-align: left;
+	width:20vw;
+	font-size:1.4vmin;
+	display: -webkit-box;
+	color: gray;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.footer{
+	color:#cccccc;
+	position: relative;
+	width: 100%;
+	padding:5vmin 0;
+	box-sizing: border-box;
+	background-color: #000000;
+	display: flex;
+	justify-content:space-around;
+}
+.footerleft .redor{
+	font-size: 3vmin;
+	font-weight: bold;
+}
+.footerleft .redor span{
+	font-size: 3vmin;
+	font-weight: bold;
+	color: orangered;
+	margin-right:0.5vw;
+}
+.footerleft .info{
+	margin-top: 2vmin;
+}
+.footerleft .info .lxwm{
+	line-height:3.2;
+	font-size: 2.2vmin;
+}
+.footerleft .info div{
+	line-height:3;
+	font-size: 1.4vmin;
+}
+.footerleft .info .top{
+	display: flex;
+}
+.footerleft .info .top .topleft{
+	margin-right: 2vmin;
+}
+.footerright div,label{
+	font-size: 1.4vmin;
+	line-height: 3;
+}
+.footerright input{
+	width:18vmin;
+	line-height:1.6;
+	opacity: 0.5;
+	margin-top:2vmin;
+}
+.footerright .top{
+	display: flex;
+}
+.footerright .top div:first-child{
+	margin-right: 2vmin;
+}
+.footerright .ok{
+	border:1px solid orangered;
+	background-color:orangered;
+	width:20vmin;
+	height:4vmin;
+	line-height: 1.6;
+	opacity: 0.8;
+}
+.footerright .textarea textarea{
+	opacity: 0.5;
+	height:6vmin;
+	width:15vw;
+	font-size: 1.6vmin;
+	margin-top: 2vmin;
+	padding:1vmin;
+}
+
+.banner{
+	width:100%;
+	height:60vmin;
+	overflow: hidden;
+}
+.banner img{
+	width: 100%;
+	height:100%;
+}
+.proct{
+	width: 100%;
+	height:auto;
+	box-sizing: border-box;
+	padding: 8vmin 18vw;
+	text-align: center;
+}
+.proct .proct-title{
+	font-size: 3vmin;
+	color: orangered;
+}
+.proct .proct-smalltext{
+	margin:1vmin 0;
+	font-size:1.5vmin;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.proct .proct-splitLine{
+	width:100%;
+	background: gray;
+	border:0.5px solid gray;
+}
+.proct ul{
+	display: flex;
+	flex-flow: wrap;
+	justify-content: space-around;
+}
+.proct ul li{
+	margin-top: 5vmin;
+	width:23vw;
+	height:40vmin;
+	padding:2vmin;
+	box-sizing: border-box;
+}
+.proct ul li img{
+	width:23vw;
+	height:28vmin;
+}
+.proct ul li .text{
+	margin-top:2vmin;
+	font-size:1.4vmin;
+	display: -webkit-box;
+	color: black;
+	-webkit-line-clamp:3;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.proct .advise .title{
+	margin-top: 3vmin;
+	text-align: left;
+	font-size: 2vmin;
+	color: orangered;
+}
+.proct ol li{
+	text-align: left;
+	color:#cccccc;
+	font-size: 1.5vmin;
+	list-style-type:decimal;
+	line-height: 2;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.distr{
+	width: 100%;
+	height:auto;
+	box-sizing: border-box;
+	padding: 8vmin 18vw;
+	text-align: center;
+}
+.distr .distr-title{
+	font-size: 3vmin;
+	color: orangered;
+}
+.distr .distr-smalltext{
+	margin:1vmin 0;
+	font-size:1.5vmin;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.distr .distr-splitLine{
+	width:100%;
+	background: gray;
+	border:0.5px solid gray;
+}
+.distr img{
+	width:1066px;
+	height: 600px;
+	/*overflow: hidden;*/
+	position: relative;
+	top:4vmin;
+	background-position: center;
+}
+.contain{
+	padding:5vmin;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-around;
+}
+.contain .distr-left{
+	width: 40vw;
+	height:50vmin;
+	overflow: hidden;
+}
+.contain .distr-left ul li{
+	font-size: 1.4vmin;
+	color: #999999;
+	text-align: left;
+	line-height:5.2vmin;
+}
+.contain .distr-right img{
+	width:30vw;
+	height:50vmin;
+}
+.sto{
+	width: 100%;
+	height:auto;
+	box-sizing: border-box;
+	padding: 8vmin 18vw;
+	text-align: center;
+}
+.sto .sto-title{
+	font-size: 3vmin;
+	color: orangered;
+}
+.sto .sto-smalltext{
+	margin:1vmin 0;
+	font-size:1.5vmin;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.sto .sto-splitLine{
+	width:100%;
+	background: gray;
+	border:0.5px solid gray;
+}
+.sto ul li a{
+	display: flex;
+	margin-top:5vmin;
+	text-align: left;
+	color:black;
+	align-items: center;
+}
+.sto ul li a img{
+	width:14vw;
+	height:14vmin;
+	border-radius:5px;
+}
+.sto ul li a .text{
+	margin-left: 5vmin;
+}
+.sto ul li a .text div{
+	color: #999999;
+	line-height:7vmin;
+	font-size: 1.4vmin;
+	display: -webkit-box;
+	-webkit-line-clamp:1;
+	-webkit-box-orient:vertical;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.content{
+	padding:5vh 20vw;
+	box-sizing: border-box;
+}
+.content .title{
+	font-size:3vmin;
+	padding: 5vmin;
+	box-sizing: border-box;
+	font-weight: bold;
+	border-bottom: 1px solid gray;
+}
+.content ul li{
+	font-size: 1.8vmin;
+	line-height: 3vmin;
+	margin-top:2vmin;
+}
